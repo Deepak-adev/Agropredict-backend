@@ -26,7 +26,12 @@ SECRET_KEY = 'django-insecure-1rh2cr0$@0j29r^bvr$f3m@d+@blmr=l*8+)l_5ab!51+yq7(6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS =[ALLOWED_HOSTS = [
+    'agropredict-86uvwsog8-deepak-as-projects.vercel.app',
+    'localhost',
+    '127.0.0.1'
+]
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 import os
