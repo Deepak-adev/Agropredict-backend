@@ -8,3 +8,4 @@ protobuf==5.28.2
 reportlab==4.2.4
 tensorflow_intel==2.17.0
 setuptools
+distutils
