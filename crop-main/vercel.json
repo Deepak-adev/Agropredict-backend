@@ -15,5 +15,7 @@
     "env": {
         "DJANGO_SETTINGS_MODULE": "crop22.settings"  
     }
-    "pythonVersion": "3.10"
+    
+    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
+    "pythonVersion": "3.11"
 }
