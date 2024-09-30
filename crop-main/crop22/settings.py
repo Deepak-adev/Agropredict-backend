@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS =[ALLOWED_HOSTS = [
     'agropredict-86uvwsog8-deepak-as-projects.vercel.app',
+    'https://agropredict-backend.vercel.app/'
     'localhost',
     '127.0.0.1'
 ]
