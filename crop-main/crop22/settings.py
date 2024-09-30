@@ -24,11 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1rh2cr0$@0j29r^bvr$f3m@d+@blmr=l*8+)l_5ab!51+yq7(6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS =[ALLOWED_HOSTS = [
-    'agropredict-86uvwsog8-deepak-as-projects.vercel.app',
-    'https://agropredict-backend.vercel.app/',
+    'agropredict-86uvwsog8-deepak-as-projects.vercel.app',,
     '.vercel.app',
     'agro-predict-ten.vercel.app',
     'localhost',
