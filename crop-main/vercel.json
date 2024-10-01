@@ -1,21 +1,26 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "crop22/wsgi.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "crop22/wsgi.py"
-        }
-    ],
+"version": 2,
+
+  "builds": [
+    {
+      "src": "crop-main/**",
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.11",
+        "maxLambdaSize": "15mb",
+        "includeFiles": [
+          "crop-main/requirements.txt"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "crop-main/wsgi.py"
+    }
+  ],
     "env": {
         "DJANGO_SETTINGS_MODULE": "crop22.settings"  
     }
-    
-    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
-    "pythonVersion": "3.11"
 }
